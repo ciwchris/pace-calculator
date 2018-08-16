@@ -2,10 +2,10 @@
     "name": "Pace calculator",
     "short_name": "Pace Calc",
     "theme_color": "#007ad9",
-    "background_color": "#fafafa",
+    "background_color": "#007ad9",
     "display": "standalone",
     "scope": "/",
-    "start_url": "/index.html",
+    "start_url": "/",
     "icons": [
         {
             "src": "assets/icons/icon-72x72.png",
