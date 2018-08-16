@@ -1,5 +1,10 @@
 # PaceCalculator
 
+https://app-manifest.firebaseapp.com/
+https://realfavicongenerator.net/
+https://www.primefaces.org/primeng/
+http://www.coolrunning.com/engine/4/4_1/96.shtml
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
 
 ## Development server
