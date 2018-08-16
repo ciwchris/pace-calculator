@@ -1,12 +1,9 @@
 import { Component } from '@angular/core';
 
-import { MessageService } from 'primeng/api';
-
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css'],
-    providers: [MessageService]
+    styleUrls: ['./app.component.css']
 })
 export class AppComponent {
     distance: string;
@@ -18,7 +15,57 @@ export class AppComponent {
     distanceSuggestions: any[];
     isSuggestedDistance = false;
     defaultPace = '00:00:00';
+
     private kilometerConversion = 0.62137119;
+    private previousHours: number;
+    private previousMinutes: number;
+    private previousSeconds: number;
+
+    isSecondInRange(event) {
+        if (this.seconds > 59) {
+            if (this.seconds.toString().length > 2) {
+                var newValue = this.seconds.toString().slice(0, 2);
+                event.target.value = newValue;
+                this.seconds = parseInt(newValue);
+                this.previousSeconds = this.seconds;
+            } else {
+                event.target.value = this.previousSeconds;
+                this.seconds = this.previousSeconds;
+            }
+        } else {
+            this.previousSeconds = this.seconds;
+        }
+    }
+    isMinuteInRange(event) {
+        if (this.minutes > 59) {
+            if (this.minutes.toString().length > 2) {
+                var newValue = this.minutes.toString().slice(0, 2);
+                event.target.value = newValue;
+                this.minutes = parseInt(newValue);
+                this.previousMinutes = this.minutes;
+            } else {
+                event.target.value = this.previousMinutes;
+                this.minutes = this.previousMinutes;
+            }
+        } else {
+            this.previousMinutes = this.minutes;
+        }
+    }
+    isHourInRange(event) {
+        if (this.hours > 99) {
+            if (this.hours.toString().length > 2) {
+                var newValue = this.hours.toString().slice(0, 2);
+                event.target.value = newValue;
+                this.hours = parseInt(newValue);
+                this.previousHours = this.hours;
+            } else {
+                event.target.value = this.previousHours;
+                this.hours = this.previousHours;
+            }
+        } else {
+            this.previousHours = this.hours;
+        }
+    }
 
     selectDistance(event) {
         this.distanceSuggestions = [];

@@ -5,18 +5,21 @@
       <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid" style="margin: 10px 0px">
         <div class="ui-grid-row">
           <div class="ui-grid-col-4">
-            <p-spinner name="hours" type="number" size="2" maxlength="2" [(ngModel)]="hours" [min]="0" [max]="99" placeholder="hrs"></p-spinner>
+            <input pInputText (input)="isHourInRange($event)" name="hours" type="number" size="2" maxlength="2" [(ngModel)]="hours" min="0"
+              max="99" placeholder="hrs" />
           </div>
           <div class="ui-grid-col-4">
-            <p-spinner name="minutes" type="number" size="2" maxlength="2" [(ngModel)]="minutes" [min]="0" [max]="59" placeholder="mins"></p-spinner>
+            <input pInputText (input)="isMinuteInRange($event)" name="minutes" type="number" size="2" maxlength="2" [(ngModel)]="minutes"
+              min="0" max="59" placeholder="mins" />
           </div>
           <div class="ui-grid-col-4">
-            <p-spinner name="seconds" type="number" size="2" maxlength="2" [(ngModel)]="seconds" [min]="0" [max]="59" placeholder="secs"></p-spinner>
+            <input pInputText (input)="isSecondInRange($event)" name="seconds" type="number" size="2" maxlength="2" [(ngModel)]="seconds"
+              min="0" max="59" placeholder="secs" />
           </div>
         </div>
         <div class="ui-grid-row">
           <div class="ui-grid-col-12">
-            <p-autoComplete name="distance" required [(ngModel)]="distance" [suggestions]="distanceSuggestions" (completeMethod)="selectDistance($event)"
+            <p-autoComplete name="distance" [(ngModel)]="distance" [suggestions]="distanceSuggestions" (completeMethod)="selectDistance($event)"
               (onKeyUp)="checkUnitEnablement($event)" (onSelect)="setUnitEnablement($event)" (onClear)="isSuggestedDistance=false"
               [size]="30" [minLength]="1" placeholder="distance" [dropdown]="true">
             </p-autoComplete>
