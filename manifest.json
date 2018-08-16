@@ -4,8 +4,8 @@
     "theme_color": "#007ad9",
     "background_color": "#fafafa",
     "display": "standalone",
-    "scope": "/",
-    "start_url": "/",
+    "scope": "/pace-calculator/",
+    "start_url": "/pace-calculator/",
     "icons": [
         {
             "src": "assets/icons/icon-72x72.png",

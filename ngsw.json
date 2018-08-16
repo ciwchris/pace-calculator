@@ -1,18 +1,18 @@
 {
   "configVersion": 1,
-  "index": "/pace-calculator/index.html",
+  "index": "/index.html",
   "assetGroups": [
     {
       "name": "app",
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "/pace-calculator/favicon.ico",
-        "/pace-calculator/index.html",
-        "/pace-calculator/main.a50c0b24b48a48972616.js",
-        "/pace-calculator/polyfills.9f773b75ffcda6bb2a95.js",
-        "/pace-calculator/runtime.a66f828dca56eeb90e02.js",
-        "/pace-calculator/styles.3ea1b8b3c8eab2284f11.css"
+        "/favicon.ico",
+        "/index.html",
+        "/main.3cffd4698ef07811b49d.js",
+        "/polyfills.9f773b75ffcda6bb2a95.js",
+        "/runtime.a66f828dca56eeb90e02.js",
+        "/styles.3ea1b8b3c8eab2284f11.css"
       ],
       "patterns": []
     },
@@ -21,34 +21,34 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [
-        "/pace-calculator/assets/icons/icon-128x128.png",
-        "/pace-calculator/assets/icons/icon-144x144.png",
-        "/pace-calculator/assets/icons/icon-152x152.png",
-        "/pace-calculator/assets/icons/icon-192x192.png",
-        "/pace-calculator/assets/icons/icon-384x384.png",
-        "/pace-calculator/assets/icons/icon-512x512.png",
-        "/pace-calculator/assets/icons/icon-72x72.png",
-        "/pace-calculator/assets/icons/icon-96x96.png"
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/pace-calculator/assets/icons/icon-128x128.png": "9a0b958e88c9998317003210681d85f79af85975",
-    "/pace-calculator/assets/icons/icon-144x144.png": "8820d3d0ddb85e7833ce7161ef92e21759455a2f",
-    "/pace-calculator/assets/icons/icon-152x152.png": "187fff3be9ac1c02b75ae4dcd3281ee937d45f21",
-    "/pace-calculator/assets/icons/icon-192x192.png": "a8f13315bfe5e0fea3f6be6b5a2158674716793e",
-    "/pace-calculator/assets/icons/icon-384x384.png": "78506e685e2f246a6a2efef86ad0f3847dbd156e",
-    "/pace-calculator/assets/icons/icon-512x512.png": "baec8edbf8db3701b5b9899f99873416f3f08fe6",
-    "/pace-calculator/assets/icons/icon-72x72.png": "1ced8a7230f24b50b0df2f5ebd24b6971e33e90b",
-    "/pace-calculator/assets/icons/icon-96x96.png": "6f317c762c9120a4f391a5a2a3b96bd4aa5f2bc9",
-    "/pace-calculator/favicon.ico": "809e93c19c66a990dadf8de7e063250b6c8664b9",
-    "/pace-calculator/index.html": "ab64e7e2a91653d6d3e997bec203817d6317bc7a",
-    "/pace-calculator/main.a50c0b24b48a48972616.js": "cb37fd363acfb217853396d2bf321a9d85173b5f",
-    "/pace-calculator/polyfills.9f773b75ffcda6bb2a95.js": "27aab6116a9bc7504a07d9d37fdd2d938187bafe",
-    "/pace-calculator/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
-    "/pace-calculator/styles.3ea1b8b3c8eab2284f11.css": "24ef9531a973a424bee0f2ac51449034595190a2"
+    "/assets/icons/icon-128x128.png": "9a0b958e88c9998317003210681d85f79af85975",
+    "/assets/icons/icon-144x144.png": "8820d3d0ddb85e7833ce7161ef92e21759455a2f",
+    "/assets/icons/icon-152x152.png": "187fff3be9ac1c02b75ae4dcd3281ee937d45f21",
+    "/assets/icons/icon-192x192.png": "a8f13315bfe5e0fea3f6be6b5a2158674716793e",
+    "/assets/icons/icon-384x384.png": "78506e685e2f246a6a2efef86ad0f3847dbd156e",
+    "/assets/icons/icon-512x512.png": "baec8edbf8db3701b5b9899f99873416f3f08fe6",
+    "/assets/icons/icon-72x72.png": "1ced8a7230f24b50b0df2f5ebd24b6971e33e90b",
+    "/assets/icons/icon-96x96.png": "6f317c762c9120a4f391a5a2a3b96bd4aa5f2bc9",
+    "/favicon.ico": "809e93c19c66a990dadf8de7e063250b6c8664b9",
+    "/index.html": "bba92dfe064e16bdb42ecd39fba24e1f0441a582",
+    "/main.3cffd4698ef07811b49d.js": "cb37fd363acfb217853396d2bf321a9d85173b5f",
+    "/polyfills.9f773b75ffcda6bb2a95.js": "27aab6116a9bc7504a07d9d37fdd2d938187bafe",
+    "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "/styles.3ea1b8b3c8eab2284f11.css": "24ef9531a973a424bee0f2ac51449034595190a2"
   },
   "navigationUrls": [
     {
