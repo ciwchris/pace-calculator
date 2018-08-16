@@ -5,13 +5,13 @@
       <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid" style="margin: 10px 0px">
         <div class="ui-grid-row">
           <div class="ui-grid-col-4">
-            <p-spinner name="hours" size="2" maxlength="2" [(ngModel)]="hours" [min]="0" [max]="99" placeholder="hrs"></p-spinner>
+            <p-spinner name="hours" type="number" size="2" maxlength="2" [(ngModel)]="hours" [min]="0" [max]="99" placeholder="hrs"></p-spinner>
           </div>
           <div class="ui-grid-col-4">
-            <p-spinner name="minutes" size="2" maxlength="2" [(ngModel)]="minutes" [min]="0" [max]="59" placeholder="mins"></p-spinner>
+            <p-spinner name="minutes" type="number" size="2" maxlength="2" [(ngModel)]="minutes" [min]="0" [max]="59" placeholder="mins"></p-spinner>
           </div>
           <div class="ui-grid-col-4">
-            <p-spinner name="seconds" size="2" maxlength="2" [(ngModel)]="seconds" [min]="0" [max]="59" placeholder="secs"></p-spinner>
+            <p-spinner name="seconds" type="number" size="2" maxlength="2" [(ngModel)]="seconds" [min]="0" [max]="59" placeholder="secs"></p-spinner>
           </div>
         </div>
         <div class="ui-grid-row">

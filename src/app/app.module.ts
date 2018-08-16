@@ -34,7 +34,9 @@ import { environment } from '../environments/environment';
         ButtonModule,
         AutoCompleteModule,
         RadioButtonModule,
-        ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
+        ServiceWorkerModule.register(environment.baseHref + '/ngsw-worker.js', {
+            enabled: environment.production
+        })
     ],
     providers: [],
     bootstrap: [AppComponent]
