@@ -21,7 +21,7 @@
           <div class="ui-grid-col-12">
             <p-autoComplete name="distance" [(ngModel)]="distance" [suggestions]="distanceSuggestions" (completeMethod)="selectDistance($event)"
               (onKeyUp)="checkUnitEnablement($event)" (onSelect)="setUnitEnablement($event)" (onClear)="isSuggestedDistance=false"
-              [size]="30" [minLength]="1" placeholder="distance" [dropdown]="true">
+              maxlength="13" [minLength]="1" placeholder="distance" [dropdown]="true">
             </p-autoComplete>
           </div>
         </div>
@@ -46,10 +46,87 @@
     </p-card>
 
   </p-accordionTab>
-  <p-accordionTab header="Time for distance and pace">
-    Content 2
+  <p-accordionTab header="Time for pace and distance">
+
+    <p-card>
+      <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid" style="margin: 10px 0px">
+        <div class="ui-grid-row">
+          <div class="ui-grid-col-6">
+            <input pInputText (input)="isTimeMinuteInRange($event)" name="timeMinutes" type="number" size="2" maxlength="2" [(ngModel)]="timeMinutes"
+              min="0" max="59" placeholder="mins" />
+          </div>
+          <div class="ui-grid-col-6">
+            <input pInputText (input)="isTimeSecondInRange($event)" name="timeSeconds" type="number" size="2" maxlength="2" [(ngModel)]="timeSeconds"
+              min="0" max="59" placeholder="secs" />
+          </div>
+        </div>
+        <div class="ui-grid-row">
+          <div class="ui-grid-col-12">
+            <p-autoComplete name="distance" [(ngModel)]="distance" [suggestions]="distanceSuggestions" (completeMethod)="selectDistance($event)"
+              (onKeyUp)="checkUnitEnablement($event)" (onSelect)="setUnitEnablement($event)" (onClear)="isSuggestedDistance=false"
+              maxlength="13" [minLength]="1" placeholder="distance" [dropdown]="true">
+            </p-autoComplete>
+          </div>
+        </div>
+        <div class="ui-grid-row">
+          <div class="ui-grid-col-12">
+            <div class="ui-g">
+              <p-radioButton [disabled]="isSuggestedDistance" name="timeDistanceUnit" class="ui-g-12" value="miles" label="miles" [(ngModel)]="selectedDistanceUnit"></p-radioButton>
+              <p-radioButton [disabled]="isSuggestedDistance" name="timeDistanceUnit" class="ui-g-12" value="kilometers" label="kilometers"
+                [(ngModel)]="selectedDistanceUnit"></p-radioButton>
+            </div>
+          </div>
+        </div>
+        <div class="ui-grid-row">
+          <div class="ui-grid-col-12">
+            <p style="font-size:1.2em;">
+              <span style="font-weight: bold; margin-right:10px">Calculated time:</span>
+              <span>{{calculatePaceTime()}}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </p-card>
+
   </p-accordionTab>
   <p-accordionTab header="Distance for time and pace">
-    Content 3
+
+    <p-card>
+      <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid" style="margin: 10px 0px">
+        <div class="ui-grid-row">
+          <div class="ui-grid-col-4">
+            <input pInputText (input)="isHourInRange($event)" name="hours" type="number" size="2" maxlength="2" [(ngModel)]="hours" min="0"
+              max="99" placeholder="hrs" />
+          </div>
+          <div class="ui-grid-col-4">
+            <input pInputText (input)="isMinuteInRange($event)" name="minutes" type="number" size="2" maxlength="2" [(ngModel)]="minutes"
+              min="0" max="59" placeholder="mins" />
+          </div>
+          <div class="ui-grid-col-4">
+            <input pInputText (input)="isSecondInRange($event)" name="seconds" type="number" size="2" maxlength="2" [(ngModel)]="seconds"
+              min="0" max="59" placeholder="secs" />
+          </div>
+        </div>
+        <div class="ui-grid-row">
+          <div class="ui-grid-col-6">
+            <input pInputText (input)="isTimeMinuteInRange($event)" name="timeMinutes" type="number" size="2" maxlength="2" [(ngModel)]="timeMinutes"
+              min="0" max="59" placeholder="mins" />
+          </div>
+          <div class="ui-grid-col-6">
+            <input pInputText (input)="isTimeSecondInRange($event)" name="timeSeconds" type="number" size="2" maxlength="2" [(ngModel)]="timeSeconds"
+              min="0" max="59" placeholder="secs" />
+          </div>
+        </div>
+        <div class="ui-grid-row">
+          <div class="ui-grid-col-12">
+            <p style="font-size:1.2em;">
+              <span style="font-weight: bold; margin-right:10px">Calculated distance:</span>
+              <span>{{calculatePaceDistance()}} miles</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </p-card>
+
   </p-accordionTab>
 </p-accordion>
