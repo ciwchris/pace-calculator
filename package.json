@@ -7,8 +7,8 @@
         "build": "ng build",
         "test": "ng test",
         "lint": "ng lint",
-        "build-prod": "ng build --prod --base-href '/pace-calculator/' && npm run post:build-prod",
-        "post:build-prod": "npx ngh --dir=dist/pace-calculator"
+        "build-deploy": "ng build --prod --base-href '/pace-calculator/' && npm run deploy",
+        "deploy": "npx ngh --dir=dist/pace-calculator"
     },
     "private": true,
     "dependencies": {
