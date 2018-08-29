@@ -3,7 +3,7 @@
   "index": "/pace-calculator/index.html",
   "assetGroups": [
     {
-      "name": "app",
+      "name": "pace-calculator-app",
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
@@ -24,7 +24,7 @@
       "patterns": []
     },
     {
-      "name": "assets",
+      "name": "pace-calculator-assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [
