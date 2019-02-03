@@ -2,7 +2,7 @@
     "name": "Pace calculator",
     "short_name": "Pace Calc",
     "theme_color": "#007ad9",
-    "background_color": "#007ad9",
+    "background_color": "#ffffff",
     "display": "standalone",
     "scope": "/pace-calculator/",
     "start_url": "/pace-calculator/",
