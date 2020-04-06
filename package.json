@@ -25,7 +25,7 @@
     "@angular/service-worker": "^7.2.3",
     "core-js": "^2.5.4",
     "primeicons": "^2.0.0",
-    "primeng": "^6.1.2",
+    "primeng": "^8.1.1",
     "rxjs": "^6.5.5",
     "zone.js": "~0.8.29"
   },
